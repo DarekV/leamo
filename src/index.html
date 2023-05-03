@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="stylesheet" href="https://use.typekit.net/sim0lcd.css" />
+    <script
+      src="https://kit.fontawesome.com/6f77db5bef.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6">
-            <img class="hm-logo" src="img/leamo_logo.svg" alt="logo leamo" />
-            <div class="hm-langues">
-              <p class="hm-fr">FR</p>
-              <p class="hm-fleche"></p>
-              <div class="hm-ligne-langue"></div>
+          <div class="col-12 col-md-6 hm-contenu">
+            <div class="hm-titre">
+              <img class="hm-logo" src="img/leamo_logo.svg" alt="logo leamo" />
+              <div class="hm-langue">
+                <p>Fra <i class="fa-solid fa-arrow-down"></i></p>
+                <div class="hm-ligne-langue"></div>
+              </div>
             </div>
-            <div class="hm-nav">
+            <nav class="hm-nav">
               <div class="hm-nav-boisson">
                 <a href="">Boissons</a>
                 <div class="hm-nav-ligne"></div>
@@ -39,14 +44,41 @@
                 <a href="">Shop</a>
                 <div class="hm-nav-ligne"></div>
               </div>
-            </div>
+            </nav>
           </div>
-          <div class="col-12 col-sm-6 hm-img">
-            <img src="img/img_header.webp" alt="image de produit" />
+          <div class="col-12 col-md-6 hm-img">
+            <img
+              class="hm-img-right"
+              src="img/img_header.webp"
+              alt="image de produit"
+            />
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <div class="description">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 col-12">
+              <h2 class="description-h2">
+                Les softs sains, naturels et rafraîchissants
+              </h2>
+            </div>
+            <div class="col-md-8 offset-md-2 col-12">
+              <p class="description-p">
+                Les boissons Leamo sont des softs rafraîchissants, bio, et
+                naturels, parfaits pour accompagner des moments entre potes !
+                Avec des recettes traditionnelles, des ingrédients bio de
+                première qualité, pour des boissons moins sucrées et toujours
+                désaltérantes, Leamo est la recette faite pour toi.
+              </p>
+            </div>
+            <div class="col-md-8 offset-md-2 col-12"></div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
