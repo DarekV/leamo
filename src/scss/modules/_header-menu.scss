@@ -4,10 +4,18 @@
 
 .hm-img-right {
   height: 100%;
+  width: 50vw;
+  max-height: 750px;
+  object-fit: cover;
+  object-position: center;
+  max-inline-size: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
-@media (min-width: 575px) {
-  .hm-contenu {
+.hm-contenu {
+  @media (min-width: 575px) {
     padding: 0;
   }
 }
