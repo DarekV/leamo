@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "bootstrapp": "^0.0.0"
+    "bootstrapp": "^0.0.0",
+    "swiper": "^6.8.4"
   }
 }
