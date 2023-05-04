@@ -32,7 +32,7 @@
   }
 }
 
-.description-bouton-container {
+.description-button-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -43,18 +43,6 @@
   }
 }
 
-.description-bouton {
-  min-width: 245px;
-  padding: 0 40px;
-  height: 50px;
+.description-button {
   border: 2px solid white;
-  border-radius: 15;
-  font-family: coolvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
 }

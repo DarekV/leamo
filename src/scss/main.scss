@@ -4,4 +4,6 @@
 @import "modules/header-menu";
 @import "modules/description";
 @import "swiper/swiper";
-@import "modules/boisson";
+@import "swiper/modules/pagination/pagination";
+@import "modules/swiper";
+@import "modules/recipe.scss";

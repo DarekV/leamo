@@ -1,7 +1,29 @@
 h2 {
   margin-top: 140px;
+  font-family: coolvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  @media (max-width: 575px) {
+    font-size: 35px;
+  }
 }
 
 main {
   text-align: center;
+}
+
+.button {
+  min-width: 245px;
+  padding: 0 40px;
+  height: 50px;
+  border-radius: 15;
+  font-family: coolvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
 }
