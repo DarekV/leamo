@@ -14,7 +14,7 @@
 }
 
 .shop-banner {
-  background-image: url("../img/shop_banniere.png");
+  background-image: url("../img/shop_banniere.webp");
   background-size: cover;
   height: 430px;
   padding: 120px;
@@ -46,6 +46,6 @@
   top: 50%;
   transform: translateY(-50%);
   @media (max-width: 767px) {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
