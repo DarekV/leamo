@@ -21,6 +21,13 @@
   transform: translate(0, -50%);
 }
 
+.recipe-h2 {
+  padding: 0 50px;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
 .recipe-description-p {
   font-family: coolvetica, sans-serif;
   font-weight: 500;

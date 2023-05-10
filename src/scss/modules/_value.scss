@@ -1,0 +1,31 @@
+.value-p {
+  font-family: coolvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 30px;
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+
+.value-img {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.value-img-desktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.value-img-mobile {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.value-button {
+  border: 2px solid #000;
+}
