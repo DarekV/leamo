@@ -12,6 +12,13 @@
 .recipe-block {
   text-align: center;
   position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.recipe-block img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
 
 .recipe-description {
@@ -55,4 +62,8 @@
   color: #e3ccf0;
   border: 2px solid #e3ccf0;
   margin-top: 50px;
+  &:hover {
+    background-color: #e3ccf0;
+    color: #fff;
+  }
 }

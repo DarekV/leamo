@@ -44,5 +44,9 @@
 }
 
 .description-button {
-  border: 2px solid white;
+  border: 2px solid #fff;
+  &:hover {
+    background-color: #fff;
+    color: #ffa338;
+  }
 }
