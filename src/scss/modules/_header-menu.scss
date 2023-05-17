@@ -1,3 +1,9 @@
+.hm-container {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+
 .hm-img {
   padding: 0;
 }
@@ -15,6 +21,7 @@
 }
 
 .hm-contenu {
+  z-index: 11;
   @media (min-width: 575px) {
     padding: 0;
   }

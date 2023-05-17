@@ -17,3 +17,17 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+const button = document.querySelector(".nav-button");
+const navContainer = document.querySelector(".nav");
+const backgroundEffect = document.querySelector(".nav-background-effect");
+const body = document.querySelector("body");
+
+let openMenu = function () {
+  navContainer.classList.toggle("activ");
+  backgroundEffect.classList.toggle("activ");
+  body.classList.toggle("activ");
+};
+
+button.addEventListener("click", openMenu);
+backgroundEffect.addEventListener("click", openMenu);

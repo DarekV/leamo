@@ -1,3 +1,10 @@
+body {
+  overflow: auto;
+  &.activ {
+    overflow: hidden;
+  }
+}
+
 h2 {
   margin-top: 140px;
   font-family: coolvetica, sans-serif;
