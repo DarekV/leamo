@@ -17,6 +17,23 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
+swiper.on("slideChange", function () {
+  const activSlide = swiper.slides[swiper.activeIndex + 1];
+  const color = activSlide.dataset.color;
+  const swiperButton = document.querySelector(".swiper-button");
+  const bullets = document.querySelectorAll(".swiper-pagination-bullet");
+  bullets.forEach((bullet) => {
+    bullet.style.backgroundColor = "black";
+  });
+  const bulletActiv = document.querySelector(
+    ".swiper-pagination-bullet-active"
+  );
+
+  swiperButton.style.color = color;
+  swiperButton.style.borderColor = color;
+  bulletActiv.style.backgroundColor = color;
+  console.log(color);
+});
 
 const button = document.querySelector(".nav-button");
 const navContainer = document.querySelector(".nav");

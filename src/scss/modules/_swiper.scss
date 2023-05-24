@@ -30,10 +30,27 @@
 }
 
 .swiper-button {
+  color: #c81317;
   margin-top: 50px;
-  border: 2px solid black;
+  border: 2px solid #c81317;
 }
 
 .swiper-pagination {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 6px;
+  width: 6px;
+}
+
+.swiper-pagination-bullet-active {
+  height: 9px;
+  width: 9px;
+  background-color: #c81317;
 }
