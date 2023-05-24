@@ -31,3 +31,21 @@ let openMenu = function () {
 
 button.addEventListener("click", openMenu);
 backgroundEffect.addEventListener("click", openMenu);
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const nav = document.querySelector(".nav-top");
+
+gsap.to(nav, {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: document.body,
+    // markers: true,
+    start: "top+=800",
+    end: "bottom",
+    toggleActions: "play none none reverse",
+  },
+});

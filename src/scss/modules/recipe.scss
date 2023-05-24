@@ -14,6 +14,9 @@
   position: relative;
   display: block;
   overflow: hidden;
+  &:hover .recipe-img {
+    transform: scale(1.2);
+  }
 }
 
 .recipe-description {
@@ -61,4 +64,8 @@
     background-color: #e3ccf0;
     color: #fff;
   }
+}
+
+.recipe-img {
+  transition: 0.3s;
 }

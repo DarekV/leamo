@@ -5,7 +5,7 @@
 .shop-img {
   padding: 0;
   display: block;
-  text-decoration: none;
+  position: relative;
 }
 
 .shop-nav {
@@ -29,19 +29,13 @@
 .shop-store {
   width: 100%;
   height: 50%;
-  background-color: #e3ccf0;
-  &:hover {
-    background-image: url(../img/online.webp);
-  }
+  background-image: url(../img/online.webp);
 }
 
 .shop-online {
   width: 100%;
   height: 50%;
-  background-color: #ffa338;
-  &:hover {
-    background-image: url(../img/shop.webp);
-  }
+  background-image: url(../img/shop.webp);
 }
 
 .shop-p {
@@ -50,10 +44,35 @@
   font-style: normal;
   font-size: 40px;
   color: #fff;
-  position: relative;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  right: 50%;
+  transform: translate(50%, -50%);
   @media (max-width: 767px) {
     font-size: 30px;
+  }
+}
+
+.shop-a {
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  right: 0;
+}
+
+.shop-a-store {
+  background-color: rgba($color: #e3ccf0, $alpha: 1);
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba($color: #e3ccf0, $alpha: 0);
+  }
+}
+
+.shop-a-online {
+  background-color: rgba($color: #ffa338, $alpha: 1);
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba($color: #ffa338, $alpha: 0);
   }
 }
