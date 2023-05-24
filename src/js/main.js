@@ -41,9 +41,9 @@ const nav = document.querySelector(".nav-top");
 
 gsap.to(nav, {
   opacity: 1,
+  duration: 0.2,
   scrollTrigger: {
     trigger: document.body,
-    // markers: true,
     start: "top+=800",
     end: "bottom",
     toggleActions: "play none none reverse",
