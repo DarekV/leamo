@@ -31,6 +31,9 @@
   font-size: 50px;
   position: relative;
   z-index: 20;
+  @media (max-width: 575px) {
+    margin-left: 15px;
+  }
 }
 
 .nav-button-container {
@@ -42,9 +45,16 @@
 }
 
 .nav-img {
-  height: 569px;
-  position: absolute;
-  top: -63px;
+  height: 506px;
+  position: fixed;
+  top: -100%;
+  right: 0;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  &.activ {
+    top: 0;
+  }
 }
 
 .nav-background-effect {

@@ -18,7 +18,12 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 swiper.on("slideChange", function () {
-  const activSlide = swiper.slides[swiper.activeIndex + 1];
+  let activSlide;
+  if (window.innerWidth >= 575) {
+    activSlide = swiper.slides[swiper.activeIndex + 1];
+  } else {
+    activSlide = swiper.slides[swiper.activeIndex];
+  }
   const color = activSlide.dataset.color;
   const swiperButton = document.querySelector(".swiper-button");
   const bullets = document.querySelectorAll(".swiper-pagination-bullet");
@@ -32,11 +37,20 @@ swiper.on("slideChange", function () {
   swiperButton.style.color = color;
   swiperButton.style.borderColor = color;
   bulletActiv.style.backgroundColor = color;
-  console.log(color);
+  swiperButton.addEventListener("mouseenter", function () {
+    this.style.backgroundColor = color;
+    this.style.color = "white";
+  });
+
+  swiperButton.addEventListener("mouseleave", function () {
+    this.style.backgroundColor = "";
+    this.style.color = color;
+  });
 });
 
 const button = document.querySelector(".nav-button");
 const navContainer = document.querySelector(".nav");
+const navImg = document.querySelector(".nav-img");
 const backgroundEffect = document.querySelector(".nav-background-effect");
 const body = document.querySelector("body");
 
@@ -44,6 +58,7 @@ let openMenu = function () {
   navContainer.classList.toggle("activ");
   backgroundEffect.classList.toggle("activ");
   body.classList.toggle("activ");
+  navImg.classList.toggle("activ");
 };
 
 button.addEventListener("click", openMenu);
@@ -66,3 +81,11 @@ gsap.to(nav, {
     toggleActions: "play none none reverse",
   },
 });
+
+const language = document.querySelector(".hm-langue");
+
+openLanguage = function () {
+  language.classList.toggle("activ");
+};
+
+language.addEventListener("click", openLanguage);

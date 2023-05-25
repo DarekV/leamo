@@ -46,18 +46,38 @@
   font-weight: 300;
   font-style: normal;
   font-size: 38px;
-  margin-right: 12%;
+  position: absolute;
+  left: 38%;
+  overflow: hidden;
+  height: 42px;
+  top: 83px;
+  transition: 0.3s ease-in-out;
   @media (max-width: 765px) {
-    margin-right: 5px;
+    margin-right: 15px;
+    left: auto;
+    right: 0;
+  }
+  @media (min-width: 765px) and (max-width: 991px) {
+    left: 0;
+    top: 150px;
   }
   & i {
     font-size: 19px;
+    transition: 0.3s ease-in-out;
+  }
+  &.activ {
+    height: 150px;
+    & i {
+      transform: rotate(-180deg);
+    }
   }
 }
 
 .hm-ligne-langue {
   width: 100%;
   border: 0.5px solid black;
+  position: absolute;
+  bottom: 0;
 }
 
 .hm-nav a {

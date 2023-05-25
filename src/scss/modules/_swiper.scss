@@ -33,6 +33,18 @@
   color: #c81317;
   margin-top: 50px;
   border: 2px solid #c81317;
+  &:hover {
+    background-color: #c81317;
+    color: white;
+  }
+  @media (max-width: 575px) {
+    border: 2px solid #eeeb26;
+    color: #eeeb26;
+    &:hover {
+      background-color: #eeeb26;
+      color: white;
+    }
+  }
 }
 
 .swiper-pagination {
@@ -53,4 +65,7 @@
   height: 9px;
   width: 9px;
   background-color: #c81317;
+  @media (max-width: 575px) {
+    background-color: #eeeb26;
+  }
 }
