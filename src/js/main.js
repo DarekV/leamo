@@ -59,15 +59,15 @@ swiper.on("slideChange", function () {
 
 const button = document.querySelector(".nav-button");
 const navContainer = document.querySelector(".nav");
-const navImg = document.querySelector(".nav-img");
 const backgroundEffect = document.querySelector(".nav-background-effect");
 const body = document.querySelector("body");
+const navTop = document.querySelector(".nav-top");
 
 let openMenu = function () {
   navContainer.classList.toggle("activ");
   backgroundEffect.classList.toggle("activ");
   body.classList.toggle("activ");
-  navImg.classList.toggle("activ");
+  navTop.classList.toggle("activ");
 };
 
 button.addEventListener("click", openMenu);
