@@ -93,7 +93,7 @@ gsap.to(nav, {
 
 const language = document.querySelector(".hm-langue");
 
-openLanguage = function () {
+let openLanguage = function () {
   language.classList.toggle("activ");
 };
 
