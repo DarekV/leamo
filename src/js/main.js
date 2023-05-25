@@ -43,7 +43,16 @@ swiper.on("slideChange", function () {
   });
 
   swiperButton.addEventListener("mouseleave", function () {
-    this.style.backgroundColor = "";
+    this.style.backgroundColor = "white";
+    this.style.color = color;
+  });
+  swiperButton.addEventListener("touchstart", function () {
+    this.style.backgroundColor = color;
+    this.style.color = "white";
+  });
+
+  swiperButton.addEventListener("touchend", function () {
+    this.style.backgroundColor = "white";
     this.style.color = color;
   });
 });
